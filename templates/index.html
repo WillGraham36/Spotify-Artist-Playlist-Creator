@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+
+
+{% block head %} 
+<title>Playlist Creator</title>
+{% endblock %}
+
+
+
+{% block body %} 
+<div class="content">
+    <h1>Create a playlist of all songs from an artist!</h1>
+
+    <p>Enter the name of an artist:</p>
+    <form action="/create_playlist" method="POST">
+        <input type="content" name="content" id="content">
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if artist_name == null %}
+    <h3>It might take a few seconds to create the playlist</h3>
+    {% else %}
+    <h3>{{ artist_name }}</h3>
+    {% endif %}
+</div>
+
+{% if spotify_src != null %}
+<iframe class="iframe" src={{ spotify_src }} width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+{% endif %}
+
+{% endblock %}
+
+
+

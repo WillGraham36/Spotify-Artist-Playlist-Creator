@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: gray;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+input[type = content] {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 6px;
+    width: 20%;
+    font-size: 15px
+}
+
+input[type = submit] {
+    border: 2px solid black;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    width: 10%;
+    background-color: gray;
+    cursor: pointer;
+}
+input[type = submit]:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+.content {
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+iframe {
+    display: block;
+    border-radius:12px;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+
+    width: 90%;
+    height: 68vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
